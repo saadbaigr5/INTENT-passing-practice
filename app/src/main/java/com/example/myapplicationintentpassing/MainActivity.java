@@ -27,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
 
                 inext= new Intent(MainActivity.this, NextPage.class);  // yaha intent ka new object bnaya ha jaha par value initialize hogi
 
+                inext.putExtra("Title", "Home");
+                inext.putExtra("StudentName", "Saad");
+                inext.putExtra("roll number",10);
+
+
                 startActivity(inext); // ya laazmi on click listener mai aaega waja ya ha ka jaha par ya next page par laikar jaae ga wo click ka baad hoga
             }
         });
